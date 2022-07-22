@@ -76,6 +76,8 @@ public class ShoppingCartRestController {
         responseOrderDTO.setOrderId(order.getId());
         responseOrderDTO.setOrderDescription(orderDTO.getOrderDescription());
 
+        logger.info("test push..");
+
         return ResponseEntity.ok(responseOrderDTO);
     }
 
